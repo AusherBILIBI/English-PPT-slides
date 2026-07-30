@@ -1,0 +1,7 @@
+interface:
+  display_name: "English Courseware PPT"
+  short_description: "Build classroom English PPT decks."
+  default_prompt: "Use $english-courseware-ppt to create a classroom-ready English courseware PPT from my source document."
+
+policy:
+  allow_implicit_invocation: true

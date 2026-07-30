@@ -1,0 +1,27 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# PowerPoint lock/temp files
+~$*.pptx
+~$*.docx
+*.tmp
+
+# Local verification output
+_logo-removal-*/
+_logo-removal-report.json
+_qa/
+qa/
+exports/
+dist/
+
+# Local graph/cache artifacts
+.codebase-memory/
