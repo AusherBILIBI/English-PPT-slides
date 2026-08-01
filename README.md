@@ -13,18 +13,24 @@ This skill packages the workflow, rules, scripts, style previews, and gold PPTX 
 
 ## Install
 
-Clone or download this repository, then place the whole folder in your Codex skills directory:
+The easiest option is to download the latest release package from:
+
+https://github.com/AusherBILIBI/English-PPT-slides/releases
+
+Download `english-courseware-ppt-vX.Y.Z.zip`, extract it, then place the extracted `english-courseware-ppt` folder in your Codex skills directory.
+
+On Windows:
 
 ```powershell
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
-Copy-Item -Recurse ".\english-courseware-ppt" "$env:USERPROFILE\.codex\skills\english-courseware-ppt"
+Copy-Item -Recurse ".\english-courseware-ppt" "$env:USERPROFILE\.codex\skills\english-courseware-ppt" -Force
 ```
 
-If you are already inside this repository folder, use:
+If you cloned the repository instead of downloading a release package, run this from inside the repository root:
 
 ```powershell
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
-Copy-Item -Recurse "." "$env:USERPROFILE\.codex\skills\english-courseware-ppt"
+Copy-Item -Recurse "." "$env:USERPROFILE\.codex\skills\english-courseware-ppt" -Force
 ```
 
 On macOS or Linux:
@@ -35,6 +41,22 @@ cp -R ./english-courseware-ppt ~/.codex/skills/english-courseware-ppt
 ```
 
 Restart Codex or start a new thread if the skill list does not refresh immediately.
+
+## Versioned Releases
+
+This package uses semantic versions:
+
+- Patch releases, such as `v0.1.1`, are small fixes to docs, scripts, or scrubbed assets.
+- Minor releases, such as `v0.2.0`, add a new style route, workflow, or bundled gold asset family.
+- Major releases, such as `v1.0.0`, may change skill behavior or public prompt conventions.
+
+Release packages are built with:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\package-release.ps1
+```
+
+Upload the generated `english-courseware-ppt-vX.Y.Z.zip` to the matching GitHub Release.
 
 ## Basic Usage
 
