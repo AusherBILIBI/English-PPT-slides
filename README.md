@@ -2,7 +2,33 @@
 
 A public, reusable Codex skill for creating classroom-ready English courseware PowerPoint decks from DOCX, PDF, or existing PPTX sources.
 
-This skill packages the workflow, rules, scripts, style previews, and gold PPTX references used for Chinese middle/high-school English courseware production.
+This is not just a PowerPoint template. It packages a practical English-teaching PPT production workflow: gold reference decks, style previews, answer-reveal animation rules, DOCX extraction scripts, QA checks, and agent routing notes that help Codex create more consistent classroom slides with less repeated prompting.
+
+中文简介：
+
+English Courseware PPT Skill 是一个面向英语老师和教研人员的 Codex skill，可以帮助你把 Word、PDF、旧 PPT 等资料快速整理成适合课堂展示的英文课件。它内置了可参考的 gold PPT、课件风格预览、答案揭示动画规则、质检脚本和 `agents/` 配置，让 Codex 更稳定地理解课件制作流程，而不只是套用一个普通 PPT 模板。
+
+Download the latest release package here:
+
+https://github.com/AusherBILIBI/English-PPT-slides/releases/latest
+
+## Best For
+
+- English composition lessons.
+- Reading-continuation writing.
+- Unit writing guidance.
+- Topic-writing guidance.
+- Sentence imitation and sentence-pattern practice.
+- Expression training.
+- Answer-reveal classroom activities.
+
+## Why Use It
+
+- It gives Codex a reusable courseware workflow, not only a visual theme.
+- It includes bundled gold PPTX decks so future builds can follow proven layout rhythm, density, and classroom readability.
+- It supports multiple public style routes in one installable skill instead of requiring a separate skill for every lesson type.
+- It includes `agents/` configuration to help assistants understand the intended workflow, style choices, bundled assets, and verification steps more consistently.
+- It is distributed through versioned GitHub Releases, so teachers and courseware creators can download a stable zip package and update later.
 
 ## What It Does
 
@@ -10,6 +36,10 @@ This skill packages the workflow, rules, scripts, style previews, and gold PPTX 
 - Supports reading-continuation writing, unit composition, topic-writing guidance, sentence imitation, sentence-pattern practice, expression training, and answer-reveal practice.
 - Reuses bundled gold decks as layout and verification references so future builds stay stable and token-efficient.
 - Routes between multiple public style names instead of requiring separate skills for each courseware type.
+
+## Agent Support
+
+This skill includes an `agents/` configuration for Codex/OpenAI-style agent routing. It helps future assistants understand when to inspect gold decks, how to choose a public style route, which bundled scripts are available, and what verification steps should happen before a PPTX is considered ready.
 
 ## Install
 
